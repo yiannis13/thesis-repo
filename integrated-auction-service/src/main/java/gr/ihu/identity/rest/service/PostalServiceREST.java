@@ -1,6 +1,5 @@
 package gr.ihu.identity.rest.service;
 
-import gr.ihu.identity.IBankService;
 import gr.ihu.identity.IPostalService;
 import gr.ihu.identity.model.ModelPackage;
 import gr.ihu.identity.model.ModelPackageState;
@@ -53,9 +52,7 @@ public class PostalServiceREST {
     @Path("/{id}/check")
     @Produces({"application/xml", "application/json"})
     public Response check(@PathParam("id") Integer trackId, @HeaderParam("Authorization") String token) {
-        if (!loginManager.isValidToken(token)) {
-            throw new NotAllowedException("Not allowed operation");
-        }
+
         ModelPackage mpack = postalService.findPackageByTrackNumber(trackId);
         ModelPackageState state = mpack.getState();
 

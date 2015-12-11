@@ -1,0 +1,11 @@
+gr\ihu\identity\client\BankService.class
+gr\ihu\identity\client\IPostalService.class
+gr\ihu\settings\Settings.class
+gr\ihu\identity\client\ILoginManager.class
+gr\ihu\identity\client\IUserService.class
+gr\ihu\identity\client\LoginManager.class
+gr\ihu\identity\client\PostalService.class
+gr\ihu\identity\client\UserService.class
+gr\ihu\identity\client\UserService$1.class
+gr\ihu\identity\client\BankJob.class
+gr\ihu\identity\client\IBankService.class

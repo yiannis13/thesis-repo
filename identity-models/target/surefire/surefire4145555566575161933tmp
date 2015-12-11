@@ -1,0 +1,25 @@
+#surefire
+#Fri Dec 11 00:58:12 EET 2015
+testClassesDirectory=C\:\\Users\\John\\Documents\\NetBeansProjects\\gr.ihu.auction\\identity-models\\target\\test-classes
+classPathUrl.4=C\:\\Users\\John\\.m2\\repository\\javax\\ws\\rs\\javax.ws.rs-api\\2.0.1\\javax.ws.rs-api-2.0.1.jar
+forkMode=once
+classPathUrl.3=C\:\\Users\\John\\Documents\\NetBeansProjects\\gr.ihu.auction\\gr-ihu-commons\\target\\gr.ihu.commons-1.0.0.jar
+classPathUrl.2=C\:\\Users\\John\\.m2\\repository\\junit\\junit\\3.8.1\\junit-3.8.1.jar
+useManifestOnlyJar=true
+classPathUrl.1=C\:\\Users\\John\\Documents\\NetBeansProjects\\gr.ihu.auction\\identity-models\\target\\classes
+reportsDirectory=C\:\\Users\\John\\Documents\\NetBeansProjects\\gr.ihu.auction\\identity-models\\target\\surefire-reports
+classPathUrl.0=C\:\\Users\\John\\Documents\\NetBeansProjects\\gr.ihu.auction\\identity-models\\target\\test-classes
+providerConfiguration=org.apache.maven.surefire.junit.JUnit3Provider
+testSuiteDefinitionTestSourceDirectory=C\:\\Users\\John\\Documents\\NetBeansProjects\\gr.ihu.auction\\identity-models\\src\\test\\java
+surefireClassPathUrl.1=C\:\\Users\\John\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.10\\surefire-api-2.10.jar
+surefireClassPathUrl.0=C\:\\Users\\John\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit3\\2.10\\surefire-junit3-2.10.jar
+runOrder=filesystem
+useSystemClassLoader=true
+excludes0=**/*$*
+isTrimStackTrace=true
+enableAssertions=true
+includes2=**/*TestCase.java
+failIfNoTests=false
+includes1=**/*Test.java
+includes0=**/Test*.java
+childDelegation=false

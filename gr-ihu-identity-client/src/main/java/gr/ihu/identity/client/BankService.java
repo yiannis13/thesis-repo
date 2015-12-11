@@ -1,7 +1,7 @@
 package gr.ihu.identity.client;
 
 import gr.ihu.rest.client.RestClient;
-import java.net.URI;
+import gr.ihu.settings.Settings;
 import java.net.URISyntaxException;
 import javax.ws.rs.client.WebTarget;
 
@@ -9,16 +9,16 @@ import javax.ws.rs.client.WebTarget;
  *
  * @author John
  */
-public class BankService extends RestClient implements IBankService {
+public class BankService extends RestClient {
 
     public BankService() throws URISyntaxException {
-        super(new URI("http://localhost:8080/integrated-auction-service/rs/bank/"));
+        super(Settings.getInstance().getServiceUri());
     }
 
-    @Override
-    public void confirmTransfer(int transferId) {
-        WebTarget webTarget = target.path(transferId + "/confirm");
+    public void confirmTransfer(int transferId) {        
+        WebTarget webTarget = target.path(Settings.getInstance().getBankPath()).path(transferId + "/confirm");
         webTarget.request().get();
     }
 
 }
+

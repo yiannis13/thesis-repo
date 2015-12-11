@@ -112,7 +112,7 @@ public class BankService implements IBankService {
         transaction.setEndTime(new Date());
         bankAccountService.editTransaction(transaction);
         bankAccountService.edit(receiverAccount);
-        // send emails to the interested parties
+        // send emails to the interested parties when bank transaction is completed
         String subject = "Identity Bank Service";
         String body = "Bank transaction is completed! Your new account balance is :" ;
         emailService.sendEmail(senderAccount.getOwner().getEmail(), subject, body + senderAccount.getAmount());
@@ -157,7 +157,7 @@ public class BankService implements IBankService {
         eAccount.setOwner(user);
         eAccount.setAmount(amount);
         bankAccountService.create(eAccount);
-        bankAccountService.count(); // we do it to get the account id
+        bankAccountService.count(); // we do it to get the account id from DB
         return eAccount.getId();
     }
 

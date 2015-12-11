@@ -11,5 +11,4 @@ import javax.ejb.Local;
 @Local
 public interface IUserManager {
     void create(User user, String password);
-    //Collection<ModelUser> getAll();
 }

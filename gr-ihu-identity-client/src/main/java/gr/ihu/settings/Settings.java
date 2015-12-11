@@ -55,6 +55,14 @@ public class Settings {
     public String getLoginPath() {
         return this.settingsMap.get("gr.ihu.identity.login");
     }
+    
+    public String getPostalPath() {
+        return this.settingsMap.get("gr.ihu.identity.postal");
+    }
+    
+    public String getBankPath() {
+        return this.settingsMap.get("gr.ihu.identity.bank");
+    }
 
     public static Settings getInstance() {
         if (settings != null) {

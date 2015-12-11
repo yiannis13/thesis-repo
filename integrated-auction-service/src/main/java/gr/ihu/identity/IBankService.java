@@ -37,5 +37,3 @@ public interface IBankService {
     void withdraw(ModelAccount account);
 }
 
-
-//void deposit(String username, long amount);
